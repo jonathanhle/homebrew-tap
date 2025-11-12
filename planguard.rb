@@ -5,21 +5,21 @@
 class Planguard < Formula
   desc "Pre-plan Terraform security scanner"
   homepage "https://github.com/jonathanhle/planguard"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jonathanhle/planguard/releases/download/v0.1.2/terraform-planguard_0.1.2_darwin_amd64.tar.gz"
-      sha256 "96b8502d25683751352f9750f0a54cb5cc05b538ced702f1d93fb5cf14e9ada0"
+      url "https://github.com/jonathanhle/planguard/releases/download/v0.1.3/terraform-planguard_0.1.3_darwin_amd64.tar.gz"
+      sha256 "dd8a55b441ab428ab0238cb4cfe14358ef54c2c2c6e2041ac2861f20ad52dc88"
 
       def install
         bin.install "planguard"
       end
     end
     on_arm do
-      url "https://github.com/jonathanhle/planguard/releases/download/v0.1.2/terraform-planguard_0.1.2_darwin_arm64.tar.gz"
-      sha256 "1bc4f072ffb696791348dc9a7d68a0bf25f44887f77402f42ba9f1403b28ec08"
+      url "https://github.com/jonathanhle/planguard/releases/download/v0.1.3/terraform-planguard_0.1.3_darwin_arm64.tar.gz"
+      sha256 "d4e3c44b0683405cb8cb7e9e4210af0df307c27bab2499cc7fca759d019bcf79"
 
       def install
         bin.install "planguard"
@@ -30,8 +30,8 @@ class Planguard < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jonathanhle/planguard/releases/download/v0.1.2/terraform-planguard_0.1.2_linux_amd64.tar.gz"
-        sha256 "7984e85c57a5f108be653e278ca0d3797304748a4431410e912bd0006572900b"
+        url "https://github.com/jonathanhle/planguard/releases/download/v0.1.3/terraform-planguard_0.1.3_linux_amd64.tar.gz"
+        sha256 "ba1b38baa25d9e6aba85a505dd5e28919df8f10077d0e8333048b3cf941d92ef"
 
         def install
           bin.install "planguard"
@@ -40,8 +40,8 @@ class Planguard < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jonathanhle/planguard/releases/download/v0.1.2/terraform-planguard_0.1.2_linux_arm64.tar.gz"
-        sha256 "93749378a91557304a314cd99d8193fa49fb2379956fec4bde1e925e12436b5c"
+        url "https://github.com/jonathanhle/planguard/releases/download/v0.1.3/terraform-planguard_0.1.3_linux_arm64.tar.gz"
+        sha256 "b96c7e2731517891e4e150ca338c99e020cbe9363f3fb0abcaf4fc2817355885"
 
         def install
           bin.install "planguard"
